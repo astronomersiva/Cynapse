@@ -21,4 +21,4 @@ CREATE TABLE IF NOT EXISTS `authusers` (
   PRIMARY KEY (`id`)
 );
 
-INSERT INTO `authusers` (user_name, password) VALUES ('admin', md5('admin');
+INSERT INTO `authusers` (user_name, password) VALUES ('admin', md5('admin'));
