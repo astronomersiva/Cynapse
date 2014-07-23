@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `user_name` varchar(50) NOT NULL,
   `score` int(11) NOT NULL,
   `password` varchar(32) NOT NULL,
+  `category_id` varchar(32),
   PRIMARY KEY (`id`)
 );
 
@@ -19,3 +20,5 @@ CREATE TABLE IF NOT EXISTS `authusers` (
   `password` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
 );
+
+INSERT INTO `authusers` (user_name, password) VALUES ('admin', md5('admin');
